@@ -1,1 +1,35 @@
 // Navigation Styles here
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    // border:1px solid grey;
+    .nav-items{
+        margin:2% 1%;
+        // border:1px solid grey;
+        width:30%;
+        display:flex;
+        justify-content: space-between;
+        font-family: 'Roboto', sans-serif;
+        font-size:1.8rem;
+        a, a:visited{
+           text-decoration: none;  
+           color:black;
+        }
+    }
+    .fun-bus-text{
+        width:17%;
+        margin:1% 1%;
+    }
+    @media @mobile {
+        flex-direction:column-reverse;
+        align-items: center;
+        .nav-items{
+            width: 60%;
+        }
+        .fun-bus-text{
+            width:30%;
+            margin-top: 3%;
+        }
+    }
+}
