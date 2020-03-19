@@ -260,3 +260,36 @@ header .header-image {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .sign-up-one {
+  display: block;
+  background-color: #17A2B8;
+  color: white;
+  border: 1px solid #17A2B8;
+  margin: 0 10px 20px;
+  width: 200px;
+  font-size: 2rem;
+  border-radius: 15px;
+  height: 45px;
+}
+.home .sign-up-two {
+  display: block;
+  background-color: #17A2B8;
+  color: white;
+  border: 1px solid #17A2B8;
+  margin: 0 10px 20px;
+  width: 200px;
+  font-size: 2rem;
+  border-radius: 15px;
+  height: 45px;
+}
+.home .sign-up-three {
+  display: block;
+  background-color: #17A2B8;
+  color: white;
+  border: 1px solid #17A2B8;
+  margin: 0 10px 20px;
+  width: 200px;
+  font-size: 2rem;
+  border-radius: 15px;
+  height: 45px;
+}
