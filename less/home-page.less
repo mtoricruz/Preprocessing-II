@@ -10,7 +10,7 @@ header{
     border-top:2px dashed @navigation-border;
     padding-bottom: 2%;
   }
-  @media @mobile {
+  @media @mobile{
     .header-content{
       width: 90%;
     }
@@ -21,27 +21,33 @@ header{
 }
 
 .home {
-
+  
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+    border:1px solid grey;
     
     .text-content {
       width: 48%;
       padding-right: 1%;
     }
 
-    .img-content {
+    .img-content{
       width: 48%;
       padding-left: 1%;
 
       img {
         border-radius: 10px;
       }
+    }
+    @media @mobile{ 
+       display: flex;
+       justify-content: center;
+       .text-content{
+         
+       }
     }
   }
 
@@ -54,9 +60,16 @@ header{
       padding-right: 0;
     }
 
-    .img-content {
+    .img-content{
       padding-right: 1%;
       padding-left: 0;
+    }
+    @media @mobile{
+      flex-direction: column-reverse;
+      .img-content{
+        justify-content: center;
+        
+      }
     }
   }
 
@@ -67,6 +80,9 @@ header{
     img {
       border-radius: 10px;
     }
+    @media @mobile{
+      width:85%;
+    }
   }
 
   .content-pick {
@@ -74,19 +90,20 @@ header{
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
     .destination {
       width: 30%;
       margin-bottom: 30px;
     }
+    @media @mobile{
+      border: 1px solid grey;
+      flex-direction: column;
+      .destination{
+        width:60%;
+        margin:0% 20%;
+      }
+    }
   }
-  .sign-up-one{
-    .sign-up-btn(@button-bg)
-  }
-  .sign-up-two{
-    .sign-up-btn(@button-bg)
-  }
-  .sign-up-three{
+  button{
     .sign-up-btn(@button-bg)
   }
 }// home

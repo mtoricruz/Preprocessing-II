@@ -240,6 +240,7 @@ header .header-image {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border: 1px solid grey;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -251,6 +252,12 @@ header .header-image {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    justify-content: center;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -264,12 +271,25 @@ header .header-image {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+  .home .inverse-content .img-content {
+    justify-content: center;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 85%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -281,29 +301,17 @@ header .header-image {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .sign-up-one {
-  display: block;
-  background-color: #17A2B8;
-  color: white;
-  border: 1px solid #17A2B8;
-  margin: 0 10px 20px;
-  width: 200px;
-  font-size: 2rem;
-  border-radius: 15px;
-  height: 45px;
+@media (max-width: 500px) {
+  .home .content-pick {
+    border: 1px solid grey;
+    flex-direction: column;
+  }
+  .home .content-pick .destination {
+    width: 60%;
+    margin: 0% 20%;
+  }
 }
-.home .sign-up-two {
-  display: block;
-  background-color: #17A2B8;
-  color: white;
-  border: 1px solid #17A2B8;
-  margin: 0 10px 20px;
-  width: 200px;
-  font-size: 2rem;
-  border-radius: 15px;
-  height: 45px;
-}
-.home .sign-up-three {
+.home button {
   display: block;
   background-color: #17A2B8;
   color: white;
